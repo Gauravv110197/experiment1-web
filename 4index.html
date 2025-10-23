@@ -3,104 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Room Booking Form</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        input[type="date"]::-webkit-calendar-picker-indicator {
-            cursor: pointer;
-            filter: invert(0.6);
-        }
-        input[type="date"]:before {
-            content: attr(placeholder);
-            color: #9ca3af; 
-            margin-right: 0.5em;
-        }
-        input[type="date"]:focus:before,
-        input[type="date"]:valid:before {
-            content: "";
-        }
-        </style>
+    <title>Hotel Room Bokking Form</title>
 </head>
-<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
-<div class="w-full max-w-2xl p-8 space-y-6 bg-white rounded-xl shadow-lg">
-        <div class="text-center">
-            <h1 class="text-3xl font-bold text-gray-800">Hotel Room Booking</h1>
-            <p class="text-gray-500 mt-2">Please fill out the form below to reserve your room.</p>
-        </div>
-        <form action="#" method="POST" class="space-y-6">
-            <div>
-                <label for="full_name" class="block text-sm font-medium text-gray-700">Full Name</label>
-                <input type="text" id="full_name" name="full_name" placeholder="Gaurav Singh" class="mt-1 block w-full px-4 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" required>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                    <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
-                    <input type="email" id="email" name="email" placeholder="imriitikk7@gmail.com" class="mt-1 block w-full px-4 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" required>
-                </div>
-                <div>
-                    <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
-                    <input type="tel" id="phone" name="phone" placeholder="9140148030" class="mt-1 block w-full px-4 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" required>
-                </div>
-            </div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                    <label for="check_in_date" class="block text-sm font-medium text-gray-700">Check-in Date</label>
-                    <input type="date" id="check_in_date" name="check_in_date" placeholder="dd-mm-yyyy" class="mt-1 block w-full px-4 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" required>
-                </div>
-                <div>
-                    <label for="check_out_date" class="block text-sm font-medium text-gray-700">Check-out Date</label>
-                    <input type="date" id="check_out_date" name="check_out_date" placeholder="dd-mm-yyyy" class="mt-1 block w-full px-4 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" required>
-                </div>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                    <label for="room_type" class="block text-sm font-medium text-gray-700">Room Type</label>
-                    <select id="room_type" name="room_type" class="mt-1 block w-full pl-4 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 rounded-md">
-                        <option>Single Room</option>
-                        <option selected>Double Room</option>
-                        <option>Suite</option>
-                        <option>Deluxe Room</option>
-                        <option>Family Room</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="num_guests" class="block text-sm font-medium text-gray-700">Number of Guests</label>
-                    <input type="number" id="num_guests" name="num_guests" min="1" max="10" placeholder="2" class="mt-1 block w-full px-4 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" required>
-                </div>
-            </div>
-<div>
-                <label for="special_requests" class="block text-sm font-medium text-gray-700">Special Requests</label>
-                <textarea id="special_requests" name="special_requests" rows="4" placeholder="e.g., late check-in, dietary restrictions" class="mt-1 block w-full px-4 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"></textarea>
-            </div>
-            <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
-                 <button type="submit" class="w-full sm:w-auto flex-1 justify-center py-3 px-6 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-colors duration-200">
-                    Book Now
-                </button>
-                <button type="reset" class="w-full sm:w-auto flex-1 justify-center py-3 px-6 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-colors duration-200">
-                    Reset Form
-                </button>
-            </div>
-        </form>
-    </div>
- <script>
-        const today = new Date().toISOString().split('T')[0];
-        document.getElementById('check_in_date').setAttribute('min', today);
-        document.getElementById('check_out_date').setAttribute('min', today);
+<body>
+    <h1 align="center">Hotel Room Bokking Form</h1>
+    <form action="#" method="post">
+    <!-- personal information -->
+     <fieldset>
+        <legend>Personal information</legend>
+     <label for="Name">Full name:</label>
+    <input type="text" id="name" id="Name" name="Name" required>
+    <br><br>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+    <br><br>
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required>
+     </fieldset>
+    <br><br>
+     <!-- Booking details -->
+     <fieldset>
+        <legend>Booking details</legend>
+     <label for="checkin">Check-in Date;</label>
+     <input type="date" id="checkin" name="checkin" required>
+     <br><br>
+     <label for="checkout">Check-out Date:</label>
+     <input type="date" id="checkout" name="checkout" required>
+     <br><br>
+     <label for="guests">Number of guests</label>
+     <input type="number" id="guests" name="guests" min="1" max="10" required>
+     <br><br>
+     <label for="room">Room Type</label>
+     <select id="room" name="room" required>
+        <option value="single">Single Room</option>
+        <option value="double">Double Room</option>
+        <option value="suite">Suite</option>
+     </select>
+     </fieldset>
+     <br><br>
+     <fieldset>
+        <legend>Additional Services</legend>
+     <label for="requests">Special Requests</label>
+     <textarea name="requests" id="requests" cols="50" rows="4"></textarea>
+     </fieldset>
+     <br><br>
+     <!-- Buttons -->
+      <button type="submit">Book Now</button>
+     <button type="reset">Reset</button>
+</form>
 
-        const checkin = document.getElementById('check_in_date');
-        const checkout = document.getElementById('check_out_date');
-
-        checkin.addEventListener('change', () => {
-            if (checkin.value) {
-                checkout.setAttribute('min', checkin.value);
-            }
-        });
-    </script>
 </body>
 </html>
