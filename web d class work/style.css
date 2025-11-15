@@ -1,6 +1,6 @@
 /* Overall page styling */
 body {
-    background-color: rgb(112, 133, 144);
+    background-color: rgb(84, 145, 157);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,7 +14,7 @@ body {
     border: 3px solid black;
     border-radius: 10px;
     width: 280px;
-    padding: 100px;
+    padding: 20px;
     text-align: center;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
