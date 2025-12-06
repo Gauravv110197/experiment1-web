@@ -1,0 +1,62 @@
+body {
+    font-family: "Times New Roman", serif;
+    background: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Outer Border Box */
+.outer-box {
+    width: 95%;
+    border: 3px solid black;
+    margin: 40px auto;
+    padding: 40px 0;
+}
+
+/* Flexbox for all cards */
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+/* Single Card */
+.card {
+    width: 260px;
+    height: 260px;
+    border: 2px solid #1e90ff;
+    border-radius: 12px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0,0,255,0.3);
+}
+
+/* Blue Circle */
+.circle {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: #007bff;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px auto;
+}
+
+/* Name */
+.card h3 {
+    margin: 5px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Details */
+.card p {
+    font-size: 16px;
+    margin: 4px 0;
+}
